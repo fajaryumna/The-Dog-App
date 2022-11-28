@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom"
 import { HiHome } from 'react-icons/hi'
 import { BsPersonFill } from 'react-icons/bs'
 import { MdSearch } from 'react-icons/md';
+import { MdArticle } from 'react-icons/md';
 
 import './Navbar.css'
 
@@ -18,6 +19,10 @@ const NavBar = () => {
             <NavLink to="/searchpage" className="iconWrapper">
                 <MdSearch className="icon" />
                 Search
+            </NavLink>
+            <NavLink to="/article" className="iconWrapper ">
+                <MdArticle className="icon " />
+                Article
             </NavLink>
             <NavLink to="/profile" className="iconWrapper ">
                 <BsPersonFill className="icon " />

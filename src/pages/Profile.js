@@ -8,9 +8,8 @@ export default function Profile() {
     useEffect(() => {
         async function fetchData() {
             const response = await axios
-                .get("https://api.github.com/users/fajaryumna", {
-                    headers: { Authorization: "Bearer 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" },
-                }).then((res) => setData(res.data))
+                .get("https://api.github.com/users/fajaryumna")
+                .then((res) => setData(res.data))
                 .catch((e) => ("Gagal!", e));
             return response;
         }

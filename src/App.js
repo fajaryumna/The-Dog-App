@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import NavBar from './components/Navbar';
 import './App.css'
 import Logo from './assets/logo.png';
+import Article from "./pages/Article";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
+          <Route path="/article" element={<Article />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/searchpage" element={<SearchPage />} />
           <Route path="/:name" element={<SingleDog />} />
