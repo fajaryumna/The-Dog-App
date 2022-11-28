@@ -1,5 +1,4 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, } from "react-router-dom"
 
 // import page comoponent
 import SearchPage from "./pages/SearchPage"
