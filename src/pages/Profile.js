@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 export default function Profile() {
@@ -11,6 +11,7 @@ export default function Profile() {
                 .get("https://api.github.com/users/fajaryumna", {
                     headers: { Authorization: "Bearer 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" },
                 }).then((res) => setData(res.data))
+                .catch((e) => ("Gagal!", e));
             return response;
         }
         fetchData();
@@ -26,7 +27,7 @@ export default function Profile() {
                     className="grid grid-cols-1 gap-8 p-8 md:grid-cols-2 md:place-items-center"
                 >
                     <div>
-                        <img src={data.avatar_url} className="rounded-full w-60" />
+                        <img src={data.avatar_url} alt="" className="rounded-full w-60 " />
                     </div>
                     <div>
                         <h1 className="text-3xl font-bold text-black mb-8 lg:text-3xl">

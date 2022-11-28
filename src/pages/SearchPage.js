@@ -95,7 +95,7 @@ export default function SearchPage() {
                                         <Link
                                             to={`/${dog.name}`}
                                             key={dog.id}
-                                            className="bg-black p-4 rounded hover:bg-slate-600 transition-all duration-200"
+                                            className="bg-black p-4 rounded hover:bg-slate-800 transition-all duration-200"
                                         >
                                             <article>
                                                 <img
