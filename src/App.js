@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 // import page comoponent
 import SearchPage from "./pages/SearchPage"
@@ -9,6 +10,9 @@ import NavBar from './components/Navbar';
 import './App.css'
 import Logo from './assets/logo.png';
 import Article from "./pages/Article";
+import DetailArticle1 from "./pages/DetailArticle/DetailArticle1";
+import DetailArticle2 from "./pages/DetailArticle/DetailArticle2";
+import DetailArticle3 from "./pages/DetailArticle/DetailArticle3";
 
 function App() {
   return (
@@ -24,6 +28,9 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
           <Route path="/article" element={<Article />} />
+          <Route path='/detailarticle1' element={<DetailArticle1 />} />
+          <Route path='/detailarticle2' element={<DetailArticle2 />} />
+          <Route path='/detailarticle3' element={<DetailArticle3 />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/searchpage" element={<SearchPage />} />
           <Route path="/:name" element={<SingleDog />} />

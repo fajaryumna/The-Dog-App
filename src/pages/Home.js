@@ -12,7 +12,7 @@ const Home = () => {
                         <p className='max-w-[480px]'>
                             This application is supported by  <span className='text-violet-700'>
                                 <a
-                                    href="./searchpage"
+                                    href="https://thedogapi.com/"
                                     className="text-indigo-600 active:text-orange-400"
                                 >the Dog API
                                 </a></span>
