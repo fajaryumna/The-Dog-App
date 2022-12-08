@@ -26,14 +26,14 @@ export default function Profile() {
                     className="grid grid-cols-1 gap-8 p-8 md:grid-cols-2 md:place-items-center"
                 >
                     <div>
-                        <img src={data.avatar_url} alt="" className="rounded-full w-60 " />
+                        <img src={data.avatar_url} alt="" className="rounded-full w-60 mx-auto" />
                     </div>
                     <div>
                         <h1 className="text-3xl font-bold text-black mb-8 lg:text-3xl">
                             {data.name}
                         </h1>
 
-                        <ul className="text-sm text-slate-600 leading-loose lg:text-base lg:leading-relaxed">
+                        <ul className="text-sm text-slate-600 leading-loose lg:text-base lg:leading-relaxed pb-10">
                             <li>
                                 <span className="font-bold text-black">Username:</span>{" "}
                                 {data.login}

@@ -29,7 +29,7 @@ export default function Article() {
 
     return (
         <>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 pb-10">
                 {data.map((data) => (
                     <Fragment key={data.id}>
                         <div className="flex justify-center items-center">
